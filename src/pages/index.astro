@@ -2,9 +2,8 @@
 import "../styles/global.css";
 
 // Component Imports
-import { Button } from "@/components/ui/button";
 import Layout from "@/layouts/layout.astro";
-
+import { HeroSection } from "@/components/HeroSection";
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
@@ -44,13 +43,7 @@ import Layout from "@/layouts/layout.astro";
 
   <body>
     <Layout content="Hello World">
-      <div class="grid place-items-center h-screen content-center">
-        <Button variant="secondary">Tailwind Button in Astro!</Button>
-        <a href="/markdown-page" class="p-4 underline"
-          >Markdown is also supported...</a
-        >
-      </div>
+      <HeroSection />
     </Layout>
   </body>
-  
 </html>
